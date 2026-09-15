@@ -69,9 +69,15 @@ I had to make sure that urgent deliveries are handled first, packages do not exc
 
 ## Algorithm Limitations
 
-The program uses a greedy algorithm. It makes a choice at each step instead of checking all possible combinations.
+The program uses a greedy algorithm. It picks a trip's first delivery, pulls in same-area
+matches, then fills any remaining capacity with whatever comes next in priority order —
+regardless of area. Because of this last step, two deliveries from the same area can end up
+in different trips even when they would have fit together.
 
-Because of this, it may not always find the minimum number of trips.
+For example, with the sample data, ID 1 (Nasr City, 4.5 kg) gets pulled into Trip 1 by the
+capacity-filling step before ID 3 (Nasr City, 1.2 kg) is reached, even though the two together
+(5.7 kg) would fit in one trip on their own. The algorithm doesn't look ahead to avoid this —
+it also doesn't guarantee the minimum possible number of trips.
 
 ## Large Inputs
 
