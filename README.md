@@ -21,17 +21,25 @@ The sample input file is `test.csv`.
 
 ## How To Run
 
-Run the program with:
+Run the program using:
 
-```text
 python main.py
-```
 
-The program asks for the CSV file path and the vehicle capacity.
+The program asks for the CSV file path and the vehicle capacity. For the assignment, enter 10 as the capacity.
 
-For the assignment, enter `10` kg.
+The program then displays the planned trips, including the number of trips, the area, total weight, and delivery IDs.
 
-The program then shows the trips and their delivery IDs, areas, and total weight.
+It also creates a file called:
+
+invalid_deliveries_report.txt
+
+This file contains deliveries that cannot be included because their weight is more than the vehicle capacity.
+
+There is also an optional graphical frontend that can be run with:
+
+python front_test.py
+
+It allows the user to select the CSV file and enter the vehicle capacity using a window.
 
 ## Solution Approach
 
