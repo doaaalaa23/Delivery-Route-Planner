@@ -1,0 +1,11 @@
+========================================
+INVALID DELIVERY REPORT
+========================================
+Vehicle capacity: 10 kg
+Invalid deliveries:1
+
+Delivery ID: 8, Area: Alx, Priority: 4, Weight: 11.0 kg
+
+The Reason for invalidation: Delivery ID 8 exceeds weight limit: 11.0 kg
+========================================
+
