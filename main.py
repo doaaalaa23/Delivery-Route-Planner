@@ -10,7 +10,7 @@ if __name__ == "__main__":
         exit()
 
     deliveries = validate_deliveries(file_path, max_weight=max_weight)
-    trips = delivery_route_planner(deliveries, file_path, max_weight=max_weight)
+    trips = delivery_route_planner(deliveries, max_weight=max_weight)
 
     if trips:
         print(f"Total trips: {len(trips)}")
