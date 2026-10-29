@@ -75,7 +75,7 @@ def make_trips(deliveries, max_weight=10):
 
     return trips
 
-def delivery_route_planner(deliveries, path, max_weight=10):
+def delivery_route_planner(deliveries, max_weight=10):
     ordered_deliveries = order_deliveries(deliveries)
     trips = make_trips(ordered_deliveries, max_weight=max_weight)
     return trips
